@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sagar - Systems & Full-Stack Software Engineer specializing in C, C++, high-performance backend, and collaborative team engineering." />
+  <meta name="keywords" content="C, C++, Systems Engineer, Full Stack Developer, Software Engineer, Portfolio, Sagar" />
+  <meta name="author" content="Sagar" />
+  <title>Sagar | Systems & Full-Stack Software Engineer (C / C++)</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Notification / Status Banner -->
+  <aside class="recruiter-banner" id="recruiterBanner" aria-label="Recruiter announcement">
+    <div class="container banner-content">
+      <div class="banner-tag">
+        <span class="status-indicator"></span>
+        <span>Actively seeking Full-Time Software Engineer roles (Systems / Full-Stack)</span>
+      </div>
+      <div class="banner-actions">
+        <button class="btn btn-xs btn-outline" id="toggleRecruiterModeBtn" title="Highlight key skills and metrics for fast screening">
+          <i class="fa-solid fa-bolt"></i> Recruiter Fast Scan
+        </button>
+        <a href="#contact" class="banner-link">Get in Touch &rarr;</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Sagar Homepage">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Sagar</span>
+        <span class="logo-accent">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#teamwork" class="nav-link">Teamwork</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#terminal" class="nav-link">Terminal</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme mode" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <!-- Resume CTA -->
+        <a href="resume.html" target="_blank" class="btn btn-sm btn-primary resume-btn" id="resumeNavBtn">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open mobile navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>C / C++ Specialist &bull; Full-Stack Builder &bull; Team Player</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering High-Performance <span class="gradient-text">Systems</span> & Scalable <span class="gradient-text">Applications</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            Hi, I'm <strong>Sagar</strong>. I bridge the gap between low-level performance (<strong>C/C++</strong>, memory optimization, concurrency) and modern full-stack architectures. Passionate about clean code, robust system design, and high-velocity team collaboration.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-code"></i> Explore Projects
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-download"></i> View / Print Resume
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <i class="fa-regular fa-envelope"></i> Let's Talk
+            </a>
+          </div>
+
+          <div class="hero-quick-stats">
+            <div class="stat-item">
+              <span class="stat-number">C / C++20</span>
+              <span class="stat-label">Core Specialty</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Full-Stack</span>
+              <span class="stat-label">React, Node, APIs</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Agile & Git</span>
+              <span class="stat-label">Collaborative PRs & CI</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Sub-ms</span>
+              <span class="stat-label">Low Latency Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-header">
+              <div class="window-buttons">
+                <span class="win-btn win-red"></span>
+                <span class="win-btn win-yellow"></span>
+                <span class="win-btn win-green"></span>
+              </div>
+              <span class="file-name">engineer_profile.cpp</span>
+              <button class="copy-code-btn" id="copyHeroCodeBtn" title="Copy code">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+            <pre class="code-block"><code id="heroCodeSnippet"><span class="token-comment">// Sagar: Software Engineer Profile</span>
+<span class="token-keyword">#include</span> <span class="token-string">&lt;iostream&gt;</span>
+<span class="token-keyword">#include</span> <span class="token-string">&lt;vector&gt;</span>
+<span class="token-keyword">#include</span> <span class="token-string">&lt;string&gt;</span>
+<span class="token-keyword">#include</span> <span class="token-string">&lt;memory&gt;</span>
+
+<span class="token-keyword">struct</span> <span class="token-type">Engineer</span> {
+    <span class="token-type">std::string</span> name = <span class="token-string">"Sagar"</span>;
+    <span class="token-type">std::vector</span>&lt;<span class="token-type">std::string</span>&gt; core_skills = {
+        <span class="token-string">"C"</span>, <span class="token-string">"C++17/20"</span>, <span class="token-string">"Data Structures"</span>,
+        <span class="token-string">"Concurrency (pthreads)"</span>, <span class="token-string">"Full-Stack Web"</span>
+    };
+    <span class="token-type">bool</span> loves_team_collaboration = <span class="token-keyword">true</span>;
+    <span class="token-type">std::string</span> mindset = <span class="token-string">"Write clean, fast, memory-safe code."</span>;
+};
+
+<span class="token-type">int</span> <span class="token-function">main</span>() {
+    <span class="token-keyword">auto</span> dev = <span class="token-type">std::make_unique</span>&lt;<span class="token-type">Engineer</span>&gt;();
+    <span class="token-type">std::cout</span> &lt;&lt; <span class="token-string">"Ready to make team impact!\n"</span>;
+    <span class="token-keyword">return</span> <span class="token-number">0</span>;
+}</code></pre>
+            <div class="code-footer">
+              <span class="terminal-badge"><i class="fa-solid fa-check"></i> Clean Compilation (g++ -std=c++20 -O3 -Wall)</span>
+              <span class="terminal-badge"><i class="fa-solid fa-shield-halved"></i> 0 Leaks (Valgrind Clean)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECRUITER 30-SECOND SCAN OVERLAY / CARD -->
+    <section class="recruiter-snapshot-section" id="recruiterSnapshot">
+      <div class="container">
+        <div class="snapshot-card">
+          <div class="snapshot-header">
+            <div class="snapshot-title">
+              <i class="fa-solid fa-bolt-lightning snapshot-icon"></i>
+              <div>
+                <h3>Recruiter 30-Second Fast-Screen</h3>
+                <p>Everything you need to assess fit at a glance</p>
+              </div>
+            </div>
+            <div class="snapshot-badges">
+              <span class="badge badge-success">Open to Offers</span>
+              <span class="badge badge-info">Full-Time / Hybrid / Remote</span>
+            </div>
+          </div>
+
+          <div class="snapshot-grid">
+            <div class="snapshot-col">
+              <h4><i class="fa-solid fa-bullseye"></i> Primary Role Target</h4>
+              <p>Software Engineer / Systems Engineer / C++ Developer / Full-Stack Engineer</p>
+              <div class="highlight-box">
+                <strong>Superpower:</strong> Low-level memory discipline (C/C++) paired with modern web agility.
+              </div>
+            </div>
+
+            <div class="snapshot-col">
+              <h4><i class="fa-solid fa-code-branch"></i> Core Technical Stack</h4>
+              <div class="tag-cloud">
+                <span class="tag">C</span>
+                <span class="tag">C++17/20</span>
+                <span class="tag">POSIX / Multithreading</span>
+                <span class="tag">Data Structures & Algo</span>
+                <span class="tag">Node.js / Express</span>
+                <span class="tag">React & TypeScript</span>
+                <span class="tag">Linux / GDB / Valgrind</span>
+                <span class="tag">Git / CI/CD</span>
+              </div>
+            </div>
+
+            <div class="snapshot-col">
+              <h4><i class="fa-solid fa-people-group"></i> Team & Culture Fit</h4>
+              <ul class="snapshot-list">
+                <li><i class="fa-solid fa-check"></i> Strong communicator in daily stand-ups and sprint reviews.</li>
+                <li><i class="fa-solid fa-check"></i> Constructive, thorough peer code reviews and PR documentation.</li>
+                <li><i class="fa-solid fa-check"></i> Eager learner who mentors teammates and adopts best practices.</li>
+              </ul>
+            </div>
+
+            <div class="snapshot-col">
+              <h4><i class="fa-solid fa-file-circle-check"></i> Next Steps</h4>
+              <div class="snapshot-actions">
+                <a href="resume.html" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Resume
+                </a>
+                <a href="#contact" class="btn btn-sm btn-outline">
+                  <i class="fa-regular fa-calendar-check"></i> Schedule Interview
+                </a>
+                <button class="btn btn-sm btn-ghost" id="copyEmailBtn" data-email="sagar.developer@example.com">
+                  <i class="fa-regular fa-copy"></i> Copy Email
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">The Foundation Behind the Code</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3 class="about-heading">
+              A systems mindset for low-level performance, an agile mindset for user-facing applications.
+            </h3>
+            <p>
+              I am a software engineer with deep passion for computational efficiency, robust software architecture, and productive engineering collaboration. My programming journey started with <strong>C and C++</strong>, where I developed an intimate appreciation for pointers, CPU cache hierarchy, manual memory management, and deterministic resource lifecycles (RAII).
+            </p>
+            <p>
+              Simultaneously, I have expanded into full-stack development, delivering clean, responsive, and type-safe web applications using TypeScript, Node.js, and modern front-end frameworks. This duality gives me a unique advantage: I can optimize backend algorithms and data serialization down to the microsecond while crafting intuitive, accessible client interfaces.
+            </p>
+            <p>
+              Above all, I value <strong>teamwork</strong>. Writing code is only half the battle; the real multiplier comes from clear requirements alignment, thoughtful code reviews, writing comprehensive tests, and building a supportive engineering culture where the whole team moves fast without breaking production.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="pillar-content">
+                  <h4>Systems & Performance</h4>
+                  <p>Zero-overhead abstractions, cache-friendly data layouts, and memory safety.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="pillar-content">
+                  <h4>End-to-End Full-Stack</h4>
+                  <p>Designing REST/WebSocket APIs and connecting them to reactive frontends.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <div class="pillar-content">
+                  <h4>Collaborative Engineering</h4>
+                  <p>Git branching, pull requests, automated CI testing, and empathetic team communication.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="quick-facts-card">
+              <h3><i class="fa-solid fa-id-badge"></i> Quick Overview</h3>
+              <ul class="facts-list">
+                <li>
+                  <span class="fact-label">Location:</span>
+                  <span class="fact-value">Available for Relocation & Remote</span>
+                </li>
+                <li>
+                  <span class="fact-label">Core Languages:</span>
+                  <span class="fact-value">C, C++ (17/20), JavaScript/TypeScript</span>
+                </li>
+                <li>
+                  <span class="fact-label">Frameworks:</span>
+                  <span class="fact-value">Node.js, Express, React, Tailwind</span>
+                </li>
+                <li>
+                  <span class="fact-label">Tooling:</span>
+                  <span class="fact-value">Git, CMake, GDB, Valgrind, Docker</span>
+                </li>
+                <li>
+                  <span class="fact-label">Collaboration:</span>
+                  <span class="fact-value">Agile/Scrum, Jira, GitHub Actions</span>
+                </li>
+                <li>
+                  <span class="fact-label">Availability:</span>
+                  <span class="fact-value highlight-green">Immediate / Flexible Notice</span>
+                </li>
+              </ul>
+
+              <div class="card-action">
+                <a href="#contact" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-paper-plane"></i> Contact Me Directly
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section bg-alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Engineering Toolkit</h2>
+          <p class="section-subtitle">Categorized breakdown of technical competencies, tools, and methodologies</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: C / C++ & Systems -->
+          <div class="skill-category-card featured-skill-card">
+            <div class="category-header">
+              <div class="category-icon c-icon"><i class="fa-solid fa-c"></i></div>
+              <div>
+                <h3>C / C++ & Systems Programming</h3>
+                <span class="category-badge">Core Foundation</span>
+              </div>
+            </div>
+            <p class="category-desc">Deep low-level development with memory discipline, concurrency, and high-throughput architecture.</p>
+            <div class="skill-chips">
+              <span class="chip chip-priority"><i class="fa-solid fa-check"></i> C (C99, C11)</span>
+              <span class="chip chip-priority"><i class="fa-solid fa-check"></i> C++ (C++14, 17, 20)</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> STL & Custom Allocators</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Pointers & Manual Memory</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Multithreading & pthreads</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> POSIX Sockets & epoll</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> GDB & Valgrind Debugging</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> CMake & GNU Make</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Google Test (GTest)</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Cache Line & SIMD Awareness</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Full-Stack Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon web-icon"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <h3>Full-Stack & Web Architecture</h3>
+                <span class="category-badge">Modern Application</span>
+              </div>
+            </div>
+            <p class="category-desc">Building responsive, accessible user interfaces backed by scalable server APIs.</p>
+            <div class="skill-chips">
+              <span class="chip chip-priority"><i class="fa-solid fa-check"></i> TypeScript & JavaScript (ES6+)</span>
+              <span class="chip chip-priority"><i class="fa-solid fa-check"></i> React.js & Hooks</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Node.js & Express.js</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> RESTful API Design</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> WebSockets & Real-time Sync</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> HTML5, CSS3 & Responsive UI</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Tailwind CSS & UI Systems</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> WebAssembly (Wasm) Integration</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> State Management & Client Fetching</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Databases & DevOps -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon db-icon"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h3>Databases, Infrastructure & DevOps</h3>
+                <span class="category-badge">Reliability</span>
+              </div>
+            </div>
+            <p class="category-desc">Managing structured data, containerization, and automated deployment pipelines.</p>
+            <div class="skill-chips">
+              <span class="chip"><i class="fa-solid fa-check"></i> PostgreSQL & MySQL</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Redis (Caching & Queues)</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> SQLite (Embedded Storage)</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Docker & Containerization</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Linux / Bash Scripting</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> CI/CD with GitHub Actions</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Cloud Basics (AWS / Vercel)</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Teamwork, Collaboration & Process -->
+          <div class="skill-category-card featured-team-card">
+            <div class="category-header">
+              <div class="category-icon team-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div>
+                <h3>Teamwork & Collaborative Engineering</h3>
+                <span class="category-badge">Culture & Process</span>
+              </div>
+            </div>
+            <p class="category-desc">Practicing engineering excellence that empowers teammates and accelerates delivery.</p>
+            <div class="skill-chips">
+              <span class="chip chip-priority"><i class="fa-solid fa-check"></i> Git & GitHub Flow (Branches, PRs)</span>
+              <span class="chip chip-priority"><i class="fa-solid fa-check"></i> Rigorous Peer Code Reviews</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Agile / Scrum / Sprints</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Technical Design Docs (RFCs)</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Pair Programming & Mentoring</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Cross-Functional Collaboration</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Issue Tracking (Jira, Linear)</span>
+              <span class="chip"><i class="fa-solid fa-check"></i> Post-Mortems & Root Cause Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects with Measurable Impact</h2>
+          <p class="section-subtitle">Real-world systems, full-stack web applications, and collaborative team builds</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filters" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (4)</button>
+          <button class="filter-btn" data-filter="cpp" role="tab" aria-selected="false">C / C++ Systems</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+          <button class="filter-btn" data-filter="team" role="tab" aria-selected="false">Team Projects</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: C++ Key-Value Cache Engine -->
+          <div class="project-card" data-category="cpp team">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="badge-tag">C++20</span>
+                <span class="badge-tag">Multithreading</span>
+                <span class="badge-tag">Networking</span>
+                <span class="badge-tag team-tag"><i class="fa-solid fa-people-group"></i> Team Project</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="icon-link" title="View Source Code" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                <button class="icon-link inspect-btn" data-project="kv-cache" title="Inspect Architecture" aria-label="Inspect Architecture"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+
+            <h3 class="project-title">High-Throughput Distributed Key-Value Store</h3>
+            <p class="project-desc">
+              Engineered a high-performance in-memory key-value cache engine in modern C++20 featuring a custom memory slab allocator, thread-safe sharded hash tables, and an asynchronous TCP server loop.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-chart-line"></i> Performance:</span>
+                <span class="hl-val">150,000+ operations/sec at sub-millisecond p99 latency.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-users"></i> Team Role:</span>
+                <span class="hl-val">Collaborated in a 3-engineer agile team; authored the concurrency model and socket layer; conducted 18+ PR reviews.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-shield-halved"></i> Quality:</span>
+                <span class="hl-val">Integrated Google Test suite with 92% code coverage & zero memory leaks verified via Valgrind.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span>C++20</span>
+              <span>POSIX Sockets</span>
+              <span>pthreads</span>
+              <span>CMake</span>
+              <span>GTest</span>
+              <span>Valgrind</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Real-time Audio DSP / WebAssembly Full-Stack -->
+          <div class="project-card" data-category="cpp fullstack team">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="badge-tag">C++ / Wasm</span>
+                <span class="badge-tag">React</span>
+                <span class="badge-tag">TypeScript</span>
+                <span class="badge-tag team-tag"><i class="fa-solid fa-people-group"></i> Team Project</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="icon-link" title="View Source Code" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                <button class="icon-link inspect-btn" data-project="wasm-dsp" title="Inspect Architecture" aria-label="Inspect Architecture"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+
+            <h3 class="project-title">Real-Time Algorithmic Audio & Signal Visualizer</h3>
+            <p class="project-desc">
+              A full-stack hybrid web platform executing digital signal processing algorithms compiled from C++ to WebAssembly (Emscripten) for high-speed computing, paired with a React frontend rendering 60 FPS Canvas spectrums.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-chart-line"></i> Performance:</span>
+                <span class="hl-val">Reduced FFT computation time by 78% compared to native JavaScript.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-users"></i> Team Role:</span>
+                <span class="hl-val">Paired with frontend engineer to design memory buffer sharing across the Wasm boundary; led weekly sprint syncs.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-display"></i> User Experience:</span>
+                <span class="hl-val">Sustained steady 60 FPS interactive visualizer across modern desktop and mobile browsers.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span>C++</span>
+              <span>WebAssembly</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>HTML5 Canvas</span>
+              <span>Web Audio API</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Lightweight POSIX Task Scheduler & Thread Pool -->
+          <div class="project-card" data-category="cpp">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="badge-tag">C (C11)</span>
+                <span class="badge-tag">Linux / POSIX</span>
+                <span class="badge-tag">Multithreading</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="icon-link" title="View Source Code" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                <button class="icon-link inspect-btn" data-project="c-threadpool" title="Inspect Architecture" aria-label="Inspect Architecture"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+
+            <h3 class="project-title">Custom POSIX Task Scheduler & Thread Pool</h3>
+            <p class="project-desc">
+              Constructed a production-ready C11 multithreaded worker pool implementing lock-free work-stealing job queues, condition variables, and signals for background workload distribution on Linux systems.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-chart-line"></i> Performance:</span>
+                <span class="hl-val">Boosted multi-core CPU utilization by 45% with near-zero idle latency.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-book"></i> Documentation:</span>
+                <span class="hl-val">Wrote extensive Doxygen API docs and usage guides adopted by teammates for batch file processing.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-bug"></i> Reliability:</span>
+                <span class="hl-val">Stress-tested with 1,000,000 concurrent jobs; 0 deadlocks or race conditions in AddressSanitizer/TSan.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span>C (C11)</span>
+              <span>pthreads</span>
+              <span>Linux</span>
+              <span>AddressSanitizer</span>
+              <span>ThreadSanitizer</span>
+              <span>Make</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Collaborative Cloud Code Review & Snippet Runner -->
+          <div class="project-card" data-category="fullstack team">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="badge-tag">Full-Stack</span>
+                <span class="badge-tag">Node.js / Express</span>
+                <span class="badge-tag">Docker Sandboxing</span>
+                <span class="badge-tag team-tag"><i class="fa-solid fa-people-group"></i> Team Project</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="icon-link" title="View Source Code" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                <button class="icon-link inspect-btn" data-project="code-sandbox" title="Inspect Architecture" aria-label="Inspect Architecture"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+
+            <h3 class="project-title">Collaborative C/C++ Code Review & Sandbox Runner</h3>
+            <p class="project-desc">
+              A full-stack collaborative developer platform allowing distributed engineering teams to write, benchmark, and review C/C++ code snippets with isolated, secure Docker sandbox execution and live inline comments.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-chart-line"></i> Scale:</span>
+                <span class="hl-val">Executed over 10,000 isolated compilations with strict CPU, memory, and timeout bounds.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-users"></i> Team Role:</span>
+                <span class="hl-val">Served as Tech Lead across a 4-person team; created database schemas (PostgreSQL) and RESTful API endpoints.</span>
+              </div>
+              <div class="highlight-row">
+                <span class="hl-label"><i class="fa-solid fa-bolt"></i> Real-time:</span>
+                <span class="hl-val">Integrated Socket.io for instantaneous collaborative cursor tracking and PR commenting.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>Docker</span>
+              <span>PostgreSQL</span>
+              <span>Redis</span>
+              <span>Socket.io</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAMWORK & ENGINEERING VALUES SECTION (USER FOCUS) -->
+    <section class="section bg-alt" id="teamwork">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Culture & Process</span>
+          <h2 class="section-title">How I Excel in Engineering Teams</h2>
+          <p class="section-subtitle">Great software isn't built in isolation. Here is how I collaborate, communicate, and elevate my team.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="teamwork-grid">
+          <!-- Teamwork Pillar 1 -->
+          <div class="teamwork-card">
+            <div class="teamwork-icon"><i class="fa-solid fa-code-pull-request"></i></div>
+            <h3>Constructive Code Reviews</h3>
+            <p>
+              I treat PR reviews as conversations and learning opportunities. I focus on algorithmic efficiency, memory leaks, security edge-cases, and readability—always delivering feedback with empathy and actionable suggestions.
+            </p>
+            <div class="teamwork-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              "Leave every codebase cleaner and more maintainable than you found it."
+            </div>
+          </div>
+
+          <!-- Teamwork Pillar 2 -->
+          <div class="teamwork-card">
+            <div class="teamwork-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3>Transparent Communication & RFCs</h3>
+            <p>
+              Before diving into complex multi-threaded or architectural implementations, I write brief RFCs (Request for Comments) outlining trade-offs, schemas, and API contracts. This keeps product and dev teams in lockstep.
+            </p>
+            <div class="teamwork-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              "Aligning on specifications early saves hundreds of hours of rework later."
+            </div>
+          </div>
+
+          <!-- Teamwork Pillar 3 -->
+          <div class="teamwork-card">
+            <div class="teamwork-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+            <h3>Git-Flow & Continuous Integration</h3>
+            <p>
+              Disciplined with branch hygiene, atomic commits, and automated CI pipelines. I ensure unit tests, linters, and leak-checkers (ASan/Valgrind) pass before code hits the main branch, protecting production uptime.
+            </p>
+            <div class="teamwork-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              "Automate the repetitive verifications so engineers can focus on creative problem solving."
+            </div>
+          </div>
+
+          <!-- Teamwork Pillar 4 -->
+          <div class="teamwork-card">
+            <div class="teamwork-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <h3>Cross-Functional Empathy</h3>
+            <p>
+              Having worked across both bare-metal C++ systems and interactive React web applications, I seamlessly bridge conversations between low-level infrastructure engineers, frontend developers, and product managers.
+            </p>
+            <div class="teamwork-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              "Translating technical constraints into product value creates winning teams."
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Testimonial / Collaboration Metrics Banner -->
+        <div class="team-metrics-bar">
+          <div class="t-metric">
+            <span class="t-num">100+</span>
+            <span class="t-label">Peer PRs Reviewed</span>
+          </div>
+          <div class="t-metric">
+            <span class="t-num">99.8%</span>
+            <span class="t-label">CI Build Pass Rate</span>
+          </div>
+          <div class="t-metric">
+            <span class="t-num">100%</span>
+            <span class="t-label">On-Time Sprint Deliverables</span>
+          </div>
+          <div class="t-metric">
+            <span class="t-num">&lt; 24h</span>
+            <span class="t-label">Average PR Review Turnaround</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION -->
+    <section class="section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Environment</span>
+          <h2 class="section-title">Developer Interactive Console</h2>
+          <p class="section-subtitle">Experience my background, memory concepts, and teamwork philosophy via CLI</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="terminal-wrapper">
+          <div class="terminal-bar">
+            <div class="win-controls">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">
+              <i class="fa-solid fa-terminal"></i> sagar@systems-box: ~/portfolio (bash)
+            </div>
+            <div class="terminal-actions">
+              <button class="term-action-btn" id="clearTerminalBtn" title="Clear console">Clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="term-line output-text text-dim">
+              Welcome to Sagar's Interactive Engineering Shell [v2.4.0-release]
+            </div>
+            <div class="term-line output-text text-dim">
+              Type <span class="highlight-cmd">help</span> to view available commands, or click any command pill below.
+            </div>
+            <div class="term-line output-text">&nbsp;</div>
+          </div>
+
+          <!-- Quick Command Suggestions Bar -->
+          <div class="terminal-pills">
+            <span class="pill-title">Quick commands:</span>
+            <button class="cmd-pill" data-command="help">help</button>
+            <button class="cmd-pill" data-command="cat skills.txt">cat skills.txt</button>
+            <button class="cmd-pill" data-command="g++ -O3 demo.cpp && ./a.out">run demo.cpp</button>
+            <button class="cmd-pill" data-command="teamwork">teamwork</button>
+            <button class="cmd-pill" data-command="contact">contact</button>
+            <button class="cmd-pill" data-command="valgrind-check">valgrind-check</button>
+          </div>
+
+          <!-- Terminal Input Row -->
+          <div class="terminal-input-row">
+            <span class="prompt-symbol">sagar@dev:~$</span>
+            <input type="text" id="terminalInput" class="term-input" placeholder="Type a command (e.g. 'help', 'skills', 'projects', 'clear')..." autocomplete="off" spellcheck="false" />
+            <button class="btn btn-xs btn-primary" id="runCmdBtn">Run</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section class="section bg-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-subtitle">Track record of continuous engineering contribution, teamwork, and growth</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Engineer (Systems & Full-Stack)</h3>
+                  <span class="company-name">Engineering & Technology Solutions</span>
+                </div>
+                <span class="role-period">2023 &mdash; Present</span>
+              </div>
+              <ul class="role-bullets">
+                <li>Architected high-throughput backend services and native C++ modules, slashing API response latency by <strong>42%</strong>.</li>
+                <li>Collaborated within a cross-functional Scrum squad of 6 engineers, participating in bi-weekly sprint planning and backlog grooming.</li>
+                <li>Spearheaded code review quality initiatives, authoring automated GitHub Actions workflows for clang-format, linting, and unit test enforcement.</li>
+                <li>Mentored 2 junior engineers on C++ modern standards (RAII, smart pointers) and concurrent debugging techniques.</li>
+              </ul>
+              <div class="role-tags">
+                <span>C++17</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>Agile / Scrum</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Development Engineer Intern</h3>
+                  <span class="company-name">Innovative Systems Lab</span>
+                </div>
+                <span class="role-period">2022 &mdash; 2023</span>
+              </div>
+              <ul class="role-bullets">
+                <li>Developed multithreaded telemetry processing scripts in C and Python to parse binary data streams from network interfaces.</li>
+                <li>Worked side-by-side with senior developers to profile memory bottlenecks using Valgrind and GProf, resolving 14 longstanding memory leaks.</li>
+                <li>Created an internal interactive diagnostic dashboard using React and Tailwind CSS, saving the QA team 6+ hours weekly.</li>
+              </ul>
+              <div class="role-tags">
+                <span>C</span>
+                <span>Linux</span>
+                <span>Valgrind</span>
+                <span>React</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Education -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Bachelor of Technology / Science in Computer Science</h3>
+                  <span class="company-name">University Department of Computer Science & Engineering</span>
+                </div>
+                <span class="role-period">Graduated with Honors</span>
+              </div>
+              <p class="edu-desc">
+                Rigorous coursework in Operating Systems, Advanced Data Structures & Algorithms, Computer Networks, Systems Programming (C/C++), Database Management Systems, and Software Engineering Methodologies.
+              </p>
+              <div class="role-tags">
+                <span>Operating Systems</span>
+                <span>DSA</span>
+                <span>Computer Architecture</span>
+                <span>Distributed Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & RECRUITER CTA SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Start a Conversation</h2>
+          <p class="section-subtitle">Whether you're hiring for a high-impact engineering role or exploring collaboration, my inbox is open.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <h3 class="panel-heading">Direct Channels</h3>
+            <p>
+              I respond promptly to recruiter inquiries and technical discussions. Let's talk about how my C/C++ systems foundation and full-stack capabilities can bring value to your engineering team.
+            </p>
+
+            <div class="contact-method-list">
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-text">
+                  <span class="c-label">Email Address</span>
+                  <a href="mailto:sagar.developer@example.com" class="c-value">sagar.developer@example.com</a>
+                </div>
+                <button class="copy-small-btn" data-copy="sagar.developer@example.com" title="Copy email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="c-text">
+                  <span class="c-label">LinkedIn</span>
+                  <a href="https://linkedin.com" target="_blank" class="c-value">linkedin.com/in/sagar-dev</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="c-text">
+                  <span class="c-label">GitHub</span>
+                  <a href="https://github.com" target="_blank" class="c-value">github.com/sagar-dev</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="c-text">
+                  <span class="c-label">Location</span>
+                  <span class="c-value">Available for On-Site, Hybrid, or Worldwide Remote</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="resume-download-card">
+              <div class="r-icon"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="r-content">
+                <h4>Printable & ATS-Optimized Resume</h4>
+                <p>Formatted for rapid recruiter review and easy PDF export.</p>
+              </div>
+              <a href="resume.html" target="_blank" class="btn btn-sm btn-primary">
+                View Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="panel-heading">Send a Direct Message</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name / Recruiter Name *</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Jane Smith" required />
+                  <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Work Email *</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. jane@company.com" required />
+                  <span class="form-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company">Company / Organization</label>
+                  <input type="text" id="company" name="company" class="form-input" placeholder="e.g. Tech Corp / Startup" />
+                </div>
+                <div class="form-group">
+                  <label for="interest">Role Type</label>
+                  <select id="interest" name="interest" class="form-input">
+                    <option value="Systems / C++ Engineer">Systems / C++ Software Engineer</option>
+                    <option value="Full-Stack Developer">Full-Stack Developer</option>
+                    <option value="Backend Engineer">Backend Software Engineer</option>
+                    <option value="General Technical Inquiry">General Inquiry / Coffee Chat</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message / Opportunity Details *</label>
+                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell me about the role, technical challenges, and team expectations..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitFormBtn">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+
+              <div class="form-status" id="formStatus" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Sagar</span>
+          <span class="logo-accent">.dev</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          Building memory-safe systems and collaborative web platforms with C, C++, and modern full-stack architectures.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#teamwork">Teamwork</a>
+        <a href="resume.html" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:sagar.developer@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <span>&copy; <span id="currentYear"></span> Sagar. Designed with clean engineering principles.</span>
+        <span>Zero tracking cookies &bull; 100% Lightweight Vanilla Web</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ARCHITECTURE INSPECTION MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle">System Architecture</h3>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body" id="modalContent">
+        <!-- Dynamic content filled via app.js -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-sm btn-outline" id="closeModalFooterBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
+
